@@ -1,0 +1,16 @@
+{
+  "products": [
+    {"id":"EPM-002514","name":"3423423432432432","category":"Smartphones & Tablets","subCategory":"Tablets","supplier":"SAP","availability":"Out of Stock","rating":0,"price":"0.00","priceValue":0,"currency":"EUR","changed":true,"image":"assets/product-thumb.svg"},
+    {"id":"EPM-002513","name":"7\" Widescreen Portable DVD Player w MP3","category":"TV, Video & HiFi","subCategory":"Portable Players","supplier":"TECUM","availability":"Out of Stock","rating":0,"price":"249.99","priceValue":249.99,"currency":"USD","image":"assets/product-thumb.svg"},
+    {"id":"HT-2000","name":"7\" Widescreen Portable DVD Player w MP3","category":"TV, Video & HiFi","subCategory":"Portable Players","supplier":"TECUM","availability":"In Stock","rating":2.5,"price":"249.99","priceValue":249.99,"currency":"USD","image":"assets/product-thumb.svg"},
+    {"id":"EPM-002507","name":"AAA Copy Beam Breaker B-1","category":"TV, Video & HiFi","subCategory":"Projectors","supplier":"SAP","availability":"Out of Stock","rating":0,"price":"469.00","priceValue":469,"currency":"USD","image":"assets/product-thumb.svg"},
+    {"id":"EPM-002511","name":"AAA Copy Beam Breaker B-1","category":"TV, Video & HiFi","subCategory":"Projectors","supplier":"SAP","availability":"Out of Stock","rating":0,"price":"469.00","priceValue":469,"currency":"USD","image":"assets/product-thumb.svg"},
+    {"id":"EPM-002515","name":"AAA Copy Beam Breaker B-1","category":"TV, Video & HiFi","subCategory":"Projectors","supplier":"SAP","availability":"Out of Stock","rating":0,"price":"469.00","priceValue":469,"currency":"USD","changed":true,"image":"assets/product-thumb.svg"},
+    {"id":"HT-1251","name":"Astro Laptop 1516","category":"Computer Systems","subCategory":"Notebooks","supplier":"Tessile Casa Di Roma","availability":"In Stock","rating":3.5,"price":"989.00","priceValue":989,"currency":"USD","image":"assets/product-thumb.svg"},
+    {"id":"HT-1252","name":"Astro Phone 6","category":"Smartphones & Tablets","subCategory":"Smartphones","supplier":"Vente Et Réparation de Ordinateur","availability":"In Stock","rating":3.5,"price":"649.00","priceValue":649,"currency":"USD","image":"assets/product-thumb.svg"},
+    {"id":"HT-2026","name":"Audio/Video Cable Kit - 4m","category":"Computer Systems","subCategory":"Computer System Accessories","supplier":"DelBont Industries","availability":"In Stock","rating":2.5,"price":"29.99","priceValue":29.99,"currency":"USD","image":"assets/product-thumb.svg"},
+    {"id":"HT-6100","name":"Beam Breaker B-1","category":"TV, Video & HiFi","subCategory":"Projectors","supplier":"SAP","availability":"In Stock","rating":3.5,"price":"469.00","priceValue":469,"currency":"USD","image":"assets/product-thumb.svg"},
+    {"id":"HT-6101","name":"Beam Breaker B-2","category":"TV, Video & HiFi","subCategory":"Projectors","supplier":"Danish Fish Trading Company","availability":"In Stock","rating":3.5,"price":"679.00","priceValue":679,"currency":"USD","image":"assets/product-thumb.svg"},
+    {"id":"HT-6102","name":"Beam Breaker B-3","category":"TV, Video & HiFi","subCategory":"Projectors","supplier":"Swoosha","availability":"In Stock","rating":4,"price":"889.00","priceValue":889,"currency":"USD","image":"assets/product-thumb.svg"}
+  ]
+}

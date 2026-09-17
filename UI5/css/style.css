@@ -1,0 +1,55 @@
+/* Loaded from the XML view through the component's custom styling hook. */
+.productApp { background: #fff; }
+.shellBar { height: 28px !important; background: #a8c8df !important; padding: 0 18px; }
+.shellBar .sapMBtnInner { border: 0; color: #46708f; height: 26px; }
+.shellTitle { font-size: 11px !important; color: #53738c !important; font-weight: 400 !important; }
+.variantBar { height: 34px !important; padding: 0 27px; border-bottom: 1px solid #d6e0e6; }
+.variantBar .sapMTitle { font-size: 11px; color: #333; }
+.filterBar { min-height: 67px; padding: 7px 27px 9px; background: #f3f7fa; border-bottom: 1px solid #c9d9e5; gap: 12px; }
+.filterField .sapMLabel { font-size: 9px; color: #697680; margin-bottom: 3px; }
+.filterField .sapMInputBaseContentWrapper, .filterField .sapMSlt { border-radius: 0; background: #fff; }
+.filterField .sapMInputBaseInner, .filterField .sapMSltLabel { font-size: 10px; }
+.ratingFilter { min-width: 110px; }
+.ratingFilter .sapMRI { margin-top: 5px; }
+.adaptButton .sapMBtnInner { font-size: 10px; }
+.goButton .sapMBtnInner { min-width: 28px; height: 24px; line-height: 22px; font-size: 10px; padding: 0 7px; }
+.tableToolbar { height: 32px !important; padding: 0 27px; border-bottom: 1px solid #d8dfe3; }
+.tableToolbar .sapMTitle { font-size: 11px; font-weight: 500; }
+.tableToolbar .sapMBtnInner { font-size: 10px; }
+.productTable { font-size: 10px; }
+.productTable .sapMListTblHeaderCell { height: 24px; padding: 0 7px; background: #f7f8f9; border-bottom: 1px solid #ccd4d9; }
+.productTable .sapMListTblHeaderCell .sapMText { font-size: 9px; color: #58636a; white-space: nowrap; }
+.productTable .sapMListTblCell { height: 38px; padding: 3px 7px; border-bottom: 1px solid #e2e5e7; }
+.productTable .sapMText, .productTable .sapMObjectNumberText, .productTable .sapMObjectNumberUnit { font-size: 9px; color: #525b60; }
+.productTable .productName { font-size: 10px; font-weight: 600; color: #38434a; }
+.productTable .productId { font-size: 8px; color: #7c858a; }
+.productTable .changedLink { font-size: 8px; }
+.productTable .sapMObjStatus { font-size: 9px; white-space: nowrap; }
+.productTable .sapMObjStatusError { color: #e53935; }
+.productTable .sapMObjStatusSuccess { color: #27833a; }
+.productTable .sapMRI { transform: scale(.72); transform-origin: left center; width: 90px; }
+@media (max-width: 800px) {
+  .filterBar { gap: 6px; padding-left: 12px; padding-right: 12px; }
+  .filterBar .sapMToolbarSpacer { display: none; }
+  .tableToolbar { padding: 0 12px; }
+  .productTable .sapMListTblCell, .productTable .sapMListTblHeaderCell { padding-left: 4px; padding-right: 4px; }
+}
+.sapUiTheme-sap_horizon_dark .productApp { background: #12171c; }
+.sapUiTheme-sap_horizon_dark .shellBar { background: #1d3545 !important; }
+.sapUiTheme-sap_horizon_dark .shellBar .sapMBtnInner,
+.sapUiTheme-sap_horizon_dark .shellTitle { color: #d1e7f5 !important; }
+.sapUiTheme-sap_horizon_dark .variantBar { border-bottom-color: #34434d; }
+.sapUiTheme-sap_horizon_dark .variantBar .sapMTitle { color: #e5edf2; }
+.sapUiTheme-sap_horizon_dark .filterBar { background: #1b252c; border-bottom-color: #34434d; }
+.sapUiTheme-sap_horizon_dark .filterField .sapMInputBaseContentWrapper,
+.sapUiTheme-sap_horizon_dark .filterField .sapMSlt { background: #202b33; }
+.sapUiTheme-sap_horizon_dark .filterField .sapMLabel { color: #b7c5cd; }
+.sapUiTheme-sap_horizon_dark .tableToolbar { border-bottom-color: #34434d; }
+.sapUiTheme-sap_horizon_dark .productTable .sapMListTblHeaderCell { background: #1b252c; border-bottom-color: #34434d; }
+.sapUiTheme-sap_horizon_dark .productTable .sapMListTblHeaderCell .sapMText,
+.sapUiTheme-sap_horizon_dark .productTable .sapMText,
+.sapUiTheme-sap_horizon_dark .productTable .sapMObjectNumberText,
+.sapUiTheme-sap_horizon_dark .productTable .sapMObjectNumberUnit { color: #d1dce2; }
+.sapUiTheme-sap_horizon_dark .productTable .sapMListTblCell { border-bottom-color: #2d3941; }
+.sapUiTheme-sap_horizon_dark .productTable .productName { color: #f0f5f7; }
+.sapUiTheme-sap_horizon_dark .productTable .productId { color: #9eafb9; }

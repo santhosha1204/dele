@@ -1,0 +1,104 @@
+<mvc:View
+  controllerName="products.controller.Main"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core">
+  <App class="productApp">
+    <Page showHeader="false" enableScrolling="false">
+      <content>
+        <VBox fitContainer="true">
+          <Toolbar class="shellBar">
+            <Button icon="sap-icon://person-placeholder" type="Transparent" tooltip="Profile" />
+            <Button icon="sap-icon://nav-back" type="Transparent" tooltip="Back" />
+            <Image src="assets/sap-logo.svg" width="42px" decorative="false" alt="SAP" />
+            <ToolbarSpacer />
+            <Title text="Manage Products" level="H2" class="shellTitle" />
+            <ToolbarSpacer />
+            <Button icon="sap-icon://search" type="Transparent" tooltip="Search" />
+            <Button icon="sap-icon://customer" type="Transparent" tooltip="User" />
+            <Button icon="sap-icon://light-mode" type="Transparent" tooltip="Switch to dark theme" press="onToggleTheme" />
+            <Button icon="sap-icon://menu2" type="Transparent" tooltip="Menu" />
+          </Toolbar>
+
+          <Toolbar class="variantBar">
+            <Title text="Standard" level="H4" />
+            <Button icon="sap-icon://information" type="Transparent" tooltip="Variant information" />
+            <ToolbarSpacer />
+          </Toolbar>
+
+          <HBox class="filterBar" wrap="Wrap" alignItems="End">
+            <VBox class="filterField searchField">
+              <Label text="" />
+              <SearchField value="{/filters/search}" liveChange="onFilterChange" placeholder="Search" width="150px" />
+            </VBox>
+            <VBox class="filterField">
+              <Label text="Editing Status:" />
+              <Select selectedKey="{/filters/status}" change="onFilterChange" width="145px">
+                <items><core:Item key="All" text="All" /><core:Item key="In Stock" text="In Stock" /><core:Item key="Out of Stock" text="Out of Stock" /></items>
+              </Select>
+            </VBox>
+            <VBox class="filterField">
+              <Label text="Price Range:" />
+              <Select selectedKey="{/filters/price}" change="onFilterChange" width="145px">
+                <items><core:Item key="All" text="" /><core:Item key="0-500" text="Under 500" /><core:Item key="500+" text="500 and above" /></items>
+              </Select>
+            </VBox>
+            <VBox class="filterField">
+              <Label text="Category:" />
+              <Select selectedKey="{/filters/category}" change="onFilterChange" width="150px">
+                <items><core:Item key="All" text="" /><core:Item key="TV, Video &amp; HiFi" text="TV, Video &amp; HiFi" /><core:Item key="Computer Systems" text="Computer Systems" /><core:Item key="Smartphones &amp; Tablets" text="Smartphones &amp; Tablets" /></items>
+              </Select>
+            </VBox>
+            <VBox class="filterField supplierField">
+              <Label text="Supplier:" />
+              <Input value="{/filters/supplier}" liveChange="onFilterChange" width="150px" />
+            </VBox>
+            <VBox class="filterField ratingFilter">
+              <Label text="Average Rating:" />
+              <RatingIndicator value="{/filters/rating}" maxValue="5" editable="true" liveChange="onFilterChange" />
+            </VBox>
+            <ToolbarSpacer />
+            <Button text="Adapt Filters (3)" type="Transparent" class="adaptButton" press="onAdaptFilters" />
+            <Button text="Clear Filters" type="Transparent" class="clearButton" press="onClearFilters" />
+            <Button text="Go" type="Emphasized" class="goButton" press="onApplyFilters" />
+            <Button icon="sap-icon://pushpin-off" type="Transparent" tooltip="Pin filters" />
+          </HBox>
+
+          <Toolbar class="tableToolbar">
+            <Title text="Product ({/productCount})" level="H3" />
+            <ToolbarSpacer />
+            <Button text="Delete" type="Transparent" enabled="{/hasSelection}" press="onDelete" />
+            <Button icon="sap-icon://add" type="Transparent" tooltip="Add product" press="onAdd" />
+          </Toolbar>
+
+          <Table id="productTable" items="{/products}" mode="MultiSelect" selectionChange="onSelectionChange" growing="true" growingThreshold="15" class="productTable" sticky="ColumnHeaders">
+            <columns>
+              <Column width="42px"><Text text="Image" /></Column>
+              <Column width="25%"><Text text="Product" /></Column>
+              <Column width="13%"><Text text="Category" /></Column>
+              <Column width="14%"><Text text="Sub-Category" /></Column>
+              <Column width="16%"><Text text="Supplier Name" /></Column>
+              <Column width="13%"><Text text="Availability" /></Column>
+              <Column width="13%"><Text text="Average Rating" /></Column>
+              <Column hAlign="End" width="130px"><Text text="Product Unit Price" /></Column>
+            </columns>
+            <items>
+              <ColumnListItem type="Navigation" press="onProductPress">
+                <cells>
+                  <Image src="{image}" width="28px" height="28px" decorative="false" />
+                  <VBox><Text text="{name}" class="productName" /><Text text="{id}" class="productId" /><Link text="Unsaved Changes" visible="{changed}" class="changedLink" /></VBox>
+                  <Text text="{category}" />
+                  <Text text="{subCategory}" />
+                  <Text text="{supplier}" />
+                  <ObjectStatus text="{availability}" state="{= ${availability} === 'In Stock' ? 'Success' : 'Error'}" icon="{= ${availability} === 'In Stock' ? 'sap-icon://status-positive' : 'sap-icon://status-negative'}" />
+                  <RatingIndicator value="{rating}" maxValue="5" enabled="false" />
+                  <ObjectNumber number="{price}" unit="{currency}" />
+                </cells>
+              </ColumnListItem>
+            </items>
+          </Table>
+        </VBox>
+      </content>
+    </Page>
+  </App>
+</mvc:View>
